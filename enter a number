@@ -1,0 +1,13 @@
+interger = (input("Enter a number "))
+if interger.isdigit == True:
+    print(interger + " Is your number! You did it!")
+else: print (input("Try again! Please enter a NUMBER! "))
+print (interger)
+
+
+print ("11 - 3 = ?")
+x = input()
+if x == "8":
+    print ("That's right! The answer is 8!")
+elif x != "8":
+    print ("No, No, No, " + x + " Is not the correct answer")
