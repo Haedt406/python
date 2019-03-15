@@ -1,0 +1,111 @@
+Key Ideas
+Simple Python Types: int(eger), float, str(ing)
+Determing Type: type
+Declaring and Using Variables
+Assignment Token: =
+Arithmetic Operators: +, -, *, /, //, %, **
+User Input: input
+
+adjective_1 = input("Enter an adjective: ")
+name_1 = input("Enter a name: ")
+number = input("Enter a number: ")
+name_2 = input("Enter another name: ")
+town_1 = input("Enter a town name: ")
+town_2 = input("Enter a different town name: ")
+adjective_2 = input("Enter an adjective: ")
+
+# Print Story
+
+print()
+print("A new and "+ adjective_1 + " movie is coming soon!")
+print("It's about " + name_1 + " and the " + number + " Python programmers. ")
+print(name_1 + " is a computing wizard whose talent threatens " + name_2 + ".")
+print(name_1 + " is forced to flee from "+ town_1 + " and hides in nearby "+ town_2 + ".")
+print("But " + name_2 + " finds " + name_1 + " and casts a " + adjective_2 + " spell.")
+
+
+Key Ideas
+Turtle Module Methods
+Creation: Turtle
+Movement: forward, backward, goto
+x, y Orientation: right, left
+z Orientation: up, down
+Drawing Color: color, fillcolor, begin_fill, end_fill
+Status: heading, position
+Turtle Type: shape, e.g. arrow, classic, turtle or circle
+Turtle Imprints: stamp, dot
+Turtle Module Online Documentation
+Looping Construct: for
+
+
+import turtle
+import random
+
+window = turtle.Screen()
+
+racer_1 = turtle.Turtle()
+racer_1.up()
+racer_1.shape("turtle")
+racer_1.color(random.random(), random.random(), random.random())
+racer_1.goto(-200, 100)
+racer_1.down()
+racer_1.stamp()
+
+racer_2 = turtle.Turtle()
+racer_2.up()
+racer_2.shape("turtle")
+racer_2.color(random.random(), random.random(), random.random())
+racer_2.goto(-200, 0)
+racer_2.down()
+racer_2.stamp()
+
+for i in range(10):
+    racer_1.forward(random.randint(1, 40))
+    racer_1.dot()
+    racer_2.forward(random.randint(1, 40))
+    racer_2.dot()
+
+if racer_1.xcor() > racer_2.xcor():
+    print("Turtle racer #1 wins!")
+else:
+    print("Turtle racer #2 wins!")
+                      
+                      
+window.exitonclick()
+
+Key Ideas
+onclick()
+onrelease()
+ondrag()
+
+import turtle
+import random
+
+window = turtle.Screen()
+
+square = turtle.Turtle()
+square.speed(0)
+square.hideturtle()
+
+square.up()
+square.goto(-200, 200)
+square.down()
+
+for i in range(4):
+    square.forward(50)
+    square.right(90)
+
+square.up()
+square.goto(-205, 205)
+square.write("Change Color")
+
+pencil = turtle.Turtle()
+pencil.shape("circle")
+
+def drawing_controls(x, y):
+    if (-200 <= x <= -150) and (150 <= y <= 200):
+        pencil.color(random.random(), random.random(), random.random())       
+
+window.onclick(drawing_controls)
+
+pencil.onrelease(pencil.goto)

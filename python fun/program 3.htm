@@ -1,0 +1,142 @@
+<html>
+
+<head>
+<title>CSCI 127, Program 3</title>
+</head>
+
+<body>
+
+<h1>Program 3: Weather Library</h1>
+
+<h2>Logistics</h2>
+<ul>
+<li>Due Date: Friday, March 1st no later than 11:59 p.m.</li>
+<li>Partner Information: You may complete this assignment 
+    individually or with exactly one partner.  If you work with a partner,
+    you <b>must</b> both be enrolled in the same lab section or you
+    will both lose 10 points.</li>
+<li>Submission Instructions (working alone): Upload your solution, entitled 
+    <b>YourFirstName-YourLastName-Program3.py</b> to the BrightSpace 
+    Program 3 Dropbox.</li>
+<li>Submission Instructions (working with one lab mate): Upload your solution, 
+    entitled <b>YourFirstName-YourLastName-PartnerFirstName-PartnerLastName-Program3.py</b> 
+    to the BrightSpace Program 3 Dropbox. Note: If you work with a partner, 
+    only one person needs to submit a solution. If you both submit a solution, 
+    the submission that will be graded is the one from the partner whose 
+    last name comes alphabetically first.</li>
+<li>Deadline Reminder:
+    Once the submission deadline passes, BrightSpace will no
+    longer accept your Python submission and you will no longer
+    be able to earn credit.  Thus, if you are not able to fully complete
+    the assignment, submit whatever you have before the deadline so that
+    partial credit can be earned.</li>
+</ul>
+
+<h2>Learning Outcomes</h2>
+<ul>
+<li>To solve this problem, you need to understand the following
+    Python concept: files.</li>
+</ul>
+
+<h2>Background Information</h2>
+<ul>
+<li>The input file for this assignment, <a href="weather.csv">weather.csv</a>,
+    is described on this
+    <a href="https://think.cs.vt.edu/corgis/csv/weather/weather.html">page</a>.</li>
+</ul>
+
+<h2>Assignment</h2>
+<ul>
+<li>Using <a href="weather.py">weather.py</a> (renamed according to the
+    instructions above) as a starting point,
+    supply the missing functions such that interaction with a user could 
+    produce this <a href="transcript.txt">sample transcript</a>.
+<li>The function <b>coldest_temperature</b> should find the 
+    <i>Minimum</i> temperature recorded in the file.  It should
+    print this temperature, the location where it was recorded and
+    the date when it was recorded.  Match the output format that appears
+    in the sample transcript exactly.  Note: If the minimal temperature 
+    reading occurs more than once, print out the information associated with
+    its first occurrence.</li>
+<li>The function <b>average_temperature</b> is passed a <i>Location</i>
+    (e.g. Miles City, MT) that the user supplies.  
+    The function prints the number of <i>Average</i> temperatures
+    recorded for this location, as well as the average of these temperatures.
+    Match the output format in the sample transcript.
+    You may assume that the user enters the location in a valid
+    format (e.g. city name, comma, space, state).</li>    
+<li>The function <b>all_stations_by_state</b> is passed the <i>State</i> 
+    (e.g. Montana) that receives reporting data from stations.
+    The function finds and prints in <b>alphabetical order</b> the reporting
+    stations that send their data to this state.
+    Match the output format in the sample transcript.</li>
+<li>Study the Weather CSV Library and develop a function of your own
+    that corresponds to menu option 4.  The function should be interesting, 
+    non-trivial and not a simple variation of one of the other functions.
+    Modify the <b>menu</b> and <b>main</b> functions as appropriate.</li>
+</ul> 
+
+<h2>Grading - 100 points</h2>
+<ul>
+<li>Function <b>coldest_temperature</b>: 20 points
+<ul>
+<li>5 points.  The coldest temperature reading is identified correctly.  
+    (All or nothing.)</li>
+<li>5 points.  The location of the coldest temperature reading 
+    is identified correctly.  If the coldest temperature occurs at more 
+    than one location, the first location in the file should be reported.  
+    (All or nothing.)</li>
+<li>5 points.  The date of the coldest temperature reading is identified
+    correctly.  (All or nothing.)</li>
+<li>5 points.  The three lines of output match the format of the output 
+    transcript exactly.  (All or nothing.)</li>
+</ul>
+</li>
+<li>Function <b>average_temperature</b>: 20 points
+<ul>
+<li>5 points.  The number of readings is calculated correctly when the 
+    location appears in the file, regardless of the case of the input.  
+    (All of nothing.)</li>
+<li>5 points.  The average temperature is calculated correctly when the 
+    location appears in the file, regardless of the case of the input.  
+    (All or nothing.)</li>
+<li>5 points.  The two lines of output match the format of the output 
+    transcript exactly when the location appears in the file.  
+    (All or nothing.)</li>
+<li>5 points.  The two lines of output match the format of the output 
+    transcript exactly when the location does NOT appears in the file.  
+    (All or nothing.)</li>
+</ul>
+</li>
+<li>Function <b>all_stations_by_state</b>: 25 points
+<ul>
+<li>10 points.  The recording stations are identified correctly.
+    (All or nothing.)</li>
+<li>5 points.  The recording stations are printed in alphabetical order.
+    (All or nothing.)</li>
+<li>5 points.   The output matches the format of the output transcript
+    exactly when the state appears in the file.  (All or nothing.)</li> 
+<li>5 points.   The output matches the format of the output transcript
+    exactly when the state does NOT appears in the file.  (All or nothing.)</li> 
+</ul>
+<li>Your function: 20 points
+<ul>
+<li>5 points.  The function is non-trivial.  (All or nothing.)</li>
+<li>5 points.  The function is not a simple variation of one of the
+    other three functions.  (All or nothing).</li>
+<li>10 points.  The function works correctly.  (All or nothing.)</li>
+</ul>
+</li>
+<li>Style and Quality: 15 points 
+<ul>
+<li>The Python solution is of high quality, properly commented, 
+    easy to understand and does not contain unnecessary code. 
+    (3 points for each type of improvement up to 15 points.)</li>
+</ul>
+</li>
+</ul>
+
+</body>
+
+</html>
+
